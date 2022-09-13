@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary:#fff;
+  --secondary:#303030;
+  --tertiary:#fec202;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+body {
+  position: relative;
+  background-color: var(--secondary);
+  font-family: "Poppins", sans-serif;
+}
+
+.order_now {
+  font-size: 1vw;
+  font-weight: 700;
+  padding: 5px 20px;
+  color: var(--secondary);
+  background-color: var(--tertiary);
+  border-radius: 2px;
+  border: none;
+}
+.order_now:hover {
+  background-color: #f0cd58;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+nav #logo img {
+  width: 150px;
+}
+nav #nav_menu {
+  display: flex;
+  align-items: center;
+}
+nav #nav_menu li {
+  position: relative;
+  margin-left: 4vw;
+  align-items: center;
+}
+nav #nav_menu li a {
+  font-size: 15px;
+}
+nav #nav_menu li .fa-solid {
+  position: absolute;
+  color: var(--primary);
+  top: 2px;
+  left: 3px;
+  z-index: 3;
+}
+nav #nav_menu li input {
+  position: relative;
+  padding: 2px 0px 2px 20px;
+  width: 20px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background-color: var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+  cursor: pointer;
+  z-index: 5;
+  transition: all 0.5s ease-in-out;
+}
+nav #nav_menu li input:hover {
+  width: 100px;
+  padding: 2px 2px 2px 25px;
+}
+
+#hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+#hero #hero_left img {
+  position: absolute;
+  height: 100vh;
+  left: 0;
+  z-index: -10;
+}
+#hero #hero_right {
+  color: var(--primary);
+}
+#hero #hero_right img {
+  position: absolute;
+  height: 100vh;
+  left: 0;
+  z-index: -5;
+}
+#hero #hero_right #hero_content_container {
+  position: relative;
+  float: right;
+  width: 70%;
+  height: 100vh;
+  align-items: center;
+}
+#hero #hero_right #hero_content_container #hero_icons img {
+  position: absolute;
+  width: 2vw;
+  height: 2vw;
+}
+#hero #hero_right #hero_content_container #hero_icons img:nth-child(1) {
+  top: 15%;
+  left: 20%;
+}
+#hero #hero_right #hero_content_container #hero_icons img:nth-child(2) {
+  top: 40%;
+  left: 85%;
+}
+#hero #hero_right #hero_content_container #hero_icons img:nth-child(3) {
+  bottom: 15%;
+  left: 15%;
+}
+#hero #hero_right #hero_content_container #hero_icons img:nth-child(4) {
+  bottom: 13%;
+  left: 60%;
+}
+#hero #hero_right #hero_content_container #hero_icons img:nth-child(5) {
+  width: 5vw;
+  height: 5vw;
+  top: 15%;
+  left: 65%;
+}
+#hero #hero_right #hero_content_container #hero_icons img:nth-child(6) {
+  width: 6vw;
+  height: 6vw;
+  top: 40%;
+  left: 5%;
+}
+#hero #hero_right #hero_content_container #hero_icons img:nth-child(7) {
+  width: 5vw;
+  height: 6vw;
+  bottom: 20%;
+  left: 80%;
+}
+#hero #hero_right #hero_content_container #hero_icons img:nth-child(8) {
+  width: 6vw;
+  height: 6vw;
+  bottom: 8%;
+  left: 35%;
+}
+#hero #hero_right #hero_content_container #hero_icons img:nth-child(9) {
+  bottom: 5%;
+  left: 75%;
+}
+#hero #hero_right #hero_content_container #hero_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#hero #hero_content h1 {
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--tertiary);
+}
+#hero #hero_content p {
+  font-size: 1.5vw;
+  margin: 40px 0;
+}
+
+#best_seller {
+  background-color: var(--primary);
+  color: var(--secondary);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#best_seller #best_seller_container .best_seller_details {
+  width: 50%;
+  font-size: 1.5vw;
+  margin: 20px auto;
+}
+#best_seller #best_seller_card_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 40px 0;
+}
+#best_seller .best_seller_card {
+  width: 25%;
+  padding: 20px;
+  margin: 20px;
+  font-size: 1.3vw;
+}
+#best_seller .best_seller_card img {
+  width: 15vw;
+}
+#best_seller .best_seller_card .card_info {
+  width: 100%;
+}
+
+#oriental_taste {
+  position: relative;
+  height: 100vh;
+  background-color: var(--primary);
+}
+#oriental_taste #oriental_test_background img {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+#oriental_taste #oriental_test_content {
+  position: relative;
+  display: flex;
+  height: 100%;
+  color: var(--primary);
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 3;
+}
+#oriental_taste #oriental_test_content img {
+  width: 25%;
+}
+#oriental_taste #oriental_test_content #oriental_test_info {
+  width: 30%;
+}
+#oriental_taste #oriental_test_content #oriental_test_info h2 {
+  color: var(--tertiary);
+}
+#oriental_taste #oriental_test_content #oriental_test_info p {
+  font-size: 1.5vw;
+  margin: 20px 0;
+}
+
+#statistics {
+  position: relative;
+  color: var(--primary);
+  text-align: center;
+}
+#statistics #statistics_container {
+  padding: 50px 0;
+}
+#statistics #statistics_container .info {
+  width: 55%;
+  margin: 30px auto;
+  font-size: 1.5vw;
+}
+#statistics #statistics_card_container {
+  display: flex;
+  width: 90%;
+  margin: 50px auto;
+  justify-content: space-around;
+}
+#statistics #statistics_card_container .statistics_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px;
+  aspect-ratio: 1;
+  margin: 20px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+#statistics #statistics_icons img {
+  position: absolute;
+  width: 2vw;
+  height: 2vw;
+}
+#statistics #statistics_icons img:nth-child(1) {
+  top: 10%;
+  left: 30%;
+}
+#statistics #statistics_icons img:nth-child(2) {
+  top: 45%;
+  right: 10%;
+}
+#statistics #statistics_icons img:nth-child(3) {
+  width: 5vw;
+  height: 5vw;
+  top: 10%;
+  right: 15%;
+}
+#statistics #statistics_icons img:nth-child(4) {
+  width: 6vw;
+  height: 6vw;
+  top: 30%;
+  left: 3%;
+}
+#statistics #statistics_icons img:nth-child(5) {
+  width: 4vw;
+  height: 4.5vw;
+  bottom: 5%;
+  right: 5%;
+}/*# sourceMappingURL=style.css.map */
